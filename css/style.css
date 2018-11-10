@@ -464,7 +464,7 @@ height:auto;
   margin-bottom:20px;
 }
 #imgSize{
-max-height:200px;
+min-height:180px;
 }
 #description{
   margin-top:10px;
