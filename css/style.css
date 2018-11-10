@@ -437,7 +437,9 @@ nav ul li a {
 
 
 .portfolio-thumbnail img {
-  max-width: 100%;
+width: 100%;
+display:block;
+height:auto;
 }
 .image {
   display: block;
@@ -451,19 +453,29 @@ nav ul li a {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 80%;
+  height: 100%;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: grey;
 }
+.portImg{
+  position: relative;
+  margin-bottom:20px;
+}
+#imgSize{
+max-height:133px;
+}
+#description{
+  margin-top:10px;
+  margin-bottom:65px;
 
-.col-lg-4:hover .overlay {
+}
+.portImg:hover .overlay {
   opacity: .9;
 }
 
 .text {
- 
   color: white;
   font-size: 17px;
   position: absolute;
@@ -491,61 +503,6 @@ nav ul li a {
 }
 figcaption{
   padding-top: 15px;
-}
-/*-----------------------------------------------------------------------------------*/
-/*  Contact
-/*-----------------------------------------------------------------------------------*/
-
-#contact {
-  height: auto;
-  width: 100%;
-}
-
-.contact-details {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.contact-details li {
-  padding-bottom: 10px;
-}
-
-#contact input, #contact textarea {
-  width: 100%;
-}
-
-
-#contact  #sendmessage {
-  color: #18d26e;
-  border: 1px solid #18d26e;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px;
-}
-
-#contact  #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px;
-}
-
-#contact #sendmessage.show, #contact #errormessage.show, #contact .show {
-  display: block;
-}
-
-#contact .validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
 }
 
 /*-----------------------------------------------------------------------------------*/
